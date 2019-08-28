@@ -11,6 +11,7 @@ class Shoe
       if shoe 
         binding.pry 
       end 
+    end 
     BRANDS << brand 
   end
 

@@ -7,7 +7,10 @@ class Shoe
   
   def initialize(brand)
     @brand = brand
-    BRANDS << brand.uniq  
+    brand.each_with_index do |shoe, index|
+      BRANDS << brand unless BRANDS.include? (shoe[index])
+    end 
+    # BRANDS << brand  
   end
   
 
